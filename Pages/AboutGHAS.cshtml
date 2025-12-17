@@ -1,0 +1,57 @@
+@page
+@model AboutGHASModel
+@{
+    ViewData["Title"] = "About GHAS";
+}
+
+<div class="container">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+    
+    <div class="mt-4">
+        <h2>What is GitHub Advanced Security (GHAS)?</h2>
+        <p class="lead">
+            GitHub Advanced Security is a comprehensive suite of security tools that helps developers 
+            identify and fix security vulnerabilities in their code.
+        </p>
+        
+        <div class="mt-4">
+            <h3>Key Features:</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>Code Scanning:</strong> Automatically detects security vulnerabilities and coding errors 
+                    in your code using CodeQL, GitHub's semantic code analysis engine.
+                </li>
+                <li class="list-group-item">
+                    <strong>Secret Scanning:</strong> Identifies accidentally committed secrets, tokens, and credentials 
+                    in your repositories to prevent unauthorized access.
+                </li>
+                <li class="list-group-item">
+                    <strong>Dependency Review:</strong> Helps you understand the security implications of changes 
+                    to your dependencies before merging pull requests.
+                </li>
+                <li class="list-group-item">
+                    <strong>Security Overview:</strong> Provides a comprehensive view of security alerts across 
+                    your organization, making it easier to prioritize and manage risks.
+                </li>
+            </ul>
+        </div>
+        
+        <div class="mt-4">
+            <h3>Benefits:</h3>
+            <p>
+                GHAS enables development teams to shift security left by integrating security checks directly 
+                into the development workflow. This helps catch vulnerabilities early in the development process, 
+                reducing the cost and complexity of fixing security issues.
+            </p>
+        </div>
+        
+        <div class="mt-4">
+            <p class="text-muted">
+                Learn more about GitHub Advanced Security at 
+                <a href="https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security" target="_blank">
+                    GitHub's official documentation
+                </a>.
+            </p>
+        </div>
+    </div>
+</div>
